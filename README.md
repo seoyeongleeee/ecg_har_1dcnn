@@ -40,14 +40,9 @@ To run the code:
 This script uses synthetic data for demonstration purposes.
 Users should adapt the data loading section to match their own dataset.
 
-
-## DATASET AVAILABILITY
-The dataset used in this study is not publicly available due to restrictions imposed by institutional review board (IRB) regulations and ethical approvals, which limit data use to the scope of the approved project.
-
-Therefore, this repository does not include the actual ECG recordings.
-Instead, 'ECG-HAR.py' provides the full model and evaluation pipeline using sample data structure only.
+'ECG-HAR.py' provides the full model and evaluation pipeline using sample data structure only.
 Users must modify the code to fit their own ECG datasets, using the following expected format:
 - ECG data: NumPy array of shape (number of samples, 30000, 1)  
 - Labels: NumPy array of shape (number of samples,)
-We recognize the importance of open data and are actively pursuing arrangements with our ethics committee to enable broader data sharing in future studies.
-In the meantime, this code is provided to ensure transparency and to support reproducibility of the methodology.
+
+This code is provided to ensure transparency and to support reproducibility of the methodology.
