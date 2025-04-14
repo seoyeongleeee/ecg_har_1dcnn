@@ -65,7 +65,8 @@ You can customize the following parameters inside the function:
 - target_rate: Target sampling frequency (default: 500)
 - window_size: Number of samples per segment (default: 30000 for 60s)
 After running this function, segmented ECG data and labels will be saved in the ./data/ directory as .npy files.
-3. Run Training and Evaluation
+
+2. Run Training and Evaluation
 Once preprocessing is complete, you can train and evaluate the model using subject-independent 5-fold cross-validation:
     python ECG-HAR.py
 This script will:
@@ -83,7 +84,11 @@ Note: If you have more or fewer subjects than 40, adjust the NUM_SUBJECTS variab
 
 ## Requirements
 Dependencies are specified in `requirements.txt`.  
-Check the file for environment setup.
+Install them using:
+
+```bash
+pip install -r requirements.txt
+```
 
 
 ## Abstract
