@@ -28,9 +28,18 @@ INPUT_LENGTH = 30000  # ECG segment length (60s at 500Hz)
 NUM_CLASSES = 5
 NUM_SUBJECTS = 40
 
-# Generate synthetic subject data (simulated for code release)
-X_subjects = [np.random.randn(25, INPUT_LENGTH) for _ in range(NUM_SUBJECTS)]
-Y_subjects = [np.random.randint(0, NUM_CLASSES, size=(25,)) for _ in range(NUM_SUBJECTS)]
+# Load ECG data
+def load_data():
+    """
+    Load preprocessed segment-level ECG data.
+    Must return:
+        X_subjects (list of ndarray): (segments, 30000)
+        Y_subjects (list of ndarray): (segments,)
+    """
+    raise NotImplementedError("Implement this with np.load calls from your saved directory.")
+
+# Load your data here
+X_subjects, Y_subjects = load_data()
 
 # Group subjects into 5 folds (subject-independent)
 group_names = ['A', 'B', 'C', 'D', 'E']
