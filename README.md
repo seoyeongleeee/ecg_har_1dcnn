@@ -15,6 +15,7 @@ The provided code supports subject-independent 5-fold cross-validation and repli
 
 - `utils.py`: Collection of utility functions for signal filtering, visualization (e.g., confusion matrix and accuracy/loss plots), directory handling, and dataset statistics. It supports both preprocessing and evaluation phases.
 
+- `models/`: Directory containing pretrained 1D-CNN weights (`.h5` files) for each fold (fold 1 to fold 5). These can be loaded manually for inference or evaluation purposes using `model.load_weights()`.
 
 ## MODEL OVERVIEW
 - Architecture: Sequential 1D-CNN with SELU activation, LeCun normal initialization, batch normalization, and dropout.
@@ -80,6 +81,18 @@ This script will:
     Accuracy plot: acc_plot_fold{X}.png
     Loss plot: loss_plot_fold{X}.png 
 Note: If you have more or fewer subjects than 40, adjust the NUM_SUBJECTS variable and related logic in ECG-HAR.py.
+
+3. (Optional) Load Pretrained Weights
+If you want to use pretrained model weights without training from scratch,
+you can load the .h5 files stored in the models/ directory as follows:
+```python
+model = build_model(input_shape=(30000, 1), num_classes=5)
+model.load_weights("models/ecg_har_model_fold1.h5")
+```
+You can then perform inference or evaluation using your own test set.
+
+Note: These weights were trained using non-public ECG data.
+To use them effectively, ensure that your input format matches the original segment shape (30000, 1) and label encoding.
 
 
 ## Requirements
