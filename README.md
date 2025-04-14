@@ -18,21 +18,6 @@ The provided code supports subject-independent 5-fold cross-validation and repli
 - Optimizer: Nadam (learning rate = 0.0001)
 - Evaluation metrics: Accuracy, Precision, Recall, F1 Score, AUC
 
-## PARAMETERS  
-- Random seed: 825
-- Epochs: 1000
-- Batch size: 128
-- Input length: 30000 (60 seconds at 500 Hz)
-- Number of classes: 5
-- Activation function: SELU
-- Kernel initializer: LeCun normal
-- Optimizer: Nadam (learning rate = 0.0001)
-- Loss function: Categorical Crossentropy
-- Evaluation metrics: Accuracy, Precision, Recall, F1 Score, AUC
-- Pooling: Average pooling (kernel size = 3, stride = 2)
-- Dropout: Progressive increase from 0.3 to 0.7
-- Final pooling: GlobalAveragePooling1D
-
 
 ## USAGE
 To run the code:
