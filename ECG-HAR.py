@@ -15,6 +15,7 @@ from tensorflow.keras.layers import (
 from tensorflow.keras.optimizers import Nadam
 from tensorflow.keras.utils import to_categorical
 from utils import plot_confusion_matrix, plot_training_curves
+from preprocess import preprocess_data  # Import preprocessing function
 
 # Set random seed for reproducibility
 SEED = 825
@@ -28,15 +29,18 @@ INPUT_LENGTH = 30000  # ECG segment length (60s at 500Hz)
 NUM_CLASSES = 5
 NUM_SUBJECTS = 40
 
-# Load ECG data
+# Load subject-level ECG data
 def load_data():
     """
-    Load preprocessed segment-level ECG data.
-    Must return:
-        X_subjects (list of ndarray): (segments, 30000)
-        Y_subjects (list of ndarray): (segments,)
+    Replace this function with actual data loading logic.
+
+    Returns:
+        X_subjects (list of np.ndarray): each of shape (num_segments, 30000)
+        Y_subjects (list of np.ndarray): each of shape (num_segments,)
     """
-    raise NotImplementedError("Implement this with np.load calls from your saved directory.")
+    # Example usage (assumes data has been preprocessed and saved as .npy files):
+    # return [np.load(f"data/subject_{i:03}.npy") for i in range(1, 41)], [np.load(f"data/labels_{i:03}.npy") for i in range(1, 41)]
+    raise NotImplementedError("Please implement this function to load your own data.")
 
 # Load your data here
 X_subjects, Y_subjects = load_data()
