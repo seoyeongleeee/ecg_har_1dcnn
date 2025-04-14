@@ -54,8 +54,11 @@ This section outlines the typical workflow for preparing data and running the mo
 1. Preprocess Raw ECG Files
 Before training, you must convert the raw ECG .txt files into NumPy arrays using the preprocessing pipeline.
 Edit and run the process_all_subjects() function in preprocess.py:
-    from preprocess import process_all_subjects
-    process_all_subjects()
+  ```python
+  from preprocess import process_all_subjects
+  process_all_subjects()
+  ```
+
 You can customize the following parameters inside the function:
 - subject_list: List of subject IDs to process (e.g., [101, 102, 103])
 - suffix: File suffix (default: _ECG.txt)
