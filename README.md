@@ -32,3 +32,7 @@ Users must modify the code to fit their own ECG datasets, using the following ex
 - Labels: NumPy array of shape (number of samples,)
 
 This code is provided to ensure transparency and to support reproducibility of the methodology.
+
+
+## Abstract
+Human activity recognition (HAR) is essential for advancing healthcare, fitness, and patient monitoring because it provides critical insights into human physical movements. This study \textcolor{red}{proposes,} a novel one-dimensional convolutional neural network (1-D CNN) model to classify five everyday activities—Sleep, Sit, Stairs, Walk, and Run—using only electrocardiogram (ECG) signals. Data were collected from 40 healthy participants, and various window sizes (3–150 s) and sampling frequencies (125–625 Hz) to identify the optimal configuration. The proposed model achieved a classification accuracy of 93.2% ± 2.86% in a subject-independent validation scheme, with the best performance observed at a 60-s window size and 500 Hz sampling frequency. This approach exhibits competitive performance compared to other ECG-based HAR studies. Furthermore, this study incorporates a larger participant pool, addressing the limitations of previous research with small datasets and ensuring more robust and generalizable results. This research highlights the potential of ECG-based HAR systems for personalized health monitoring, real-time activity tracking, and rehabilitation, offering promising applications for wearable technologies and broader healthcare applications.
