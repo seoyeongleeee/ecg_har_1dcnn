@@ -1,6 +1,6 @@
 # Towards Real-World ECG-Based Human Activity Recognition: Optimal Window Size and Subject-Independent 1-D CNN Approach
 
-**Authors:** Sunghan Lee, Seoyeong Lee, Suyeon Yun, Semin Ryu, In Cheol Jeong
+**Authors:** Sunghan Lee, Seoyeong Lee, Suyeon Yun, Semin Ryu, In cheol Jeong
 
 This repository contains the official implementation of the 1D convolutional neural network (1D-CNN) model used in our study on human activity recognition (HAR) using single-lead electrocardiogram (ECG) signals.
 
