@@ -1,4 +1,4 @@
-# Towards Real-World ECG-Based Human Activity Recognition: Optimal Window Size and Subject-Independent 1-D CNN Approach
+# Toward Real-World ECG-Based Human Activity Recognition: Optimal Window Size and Subject-Independent 1-D CNN Approach
 
 **Authors:** Sunghan Lee, Seoyeong Lee, Suyeon Yun, Semin Ryu, In cheol Jeong
 
